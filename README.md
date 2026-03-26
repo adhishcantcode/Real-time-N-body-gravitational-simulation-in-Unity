@@ -46,7 +46,8 @@ This Unity-based prototype demonstrates:
 
 ## Demo
 
-[![Simulation Demo](Images/demo.mp4)](Images/demo3.mp4)
+[![Simulation Demo](Images/demo.mp4)
+[![Simulation Demo](Images/demo3.mp4)
 
 _Real-time multi-body gravitational simulation in Unity_
 
@@ -54,7 +55,8 @@ _Real-time multi-body gravitational simulation in Unity_
 
 ## Screenshots
 
-[![Simulation Demo](Images/img1.png)(Images/img2.png)
+[![Simulation Demo](Images/img1.png)
+[![Simulation Demo](Images/img2.png)
 [![Simulation Demo](Images/img3.png)
 
 ---
@@ -135,7 +137,7 @@ Images/ → GIFs, screenshots, demo media
 
 1. Clone the repository:
 
- git clone https://github.com/adhishcantcode/Real-time-N-body-gravitational-simulation-in-Unity.git
+git clone https://github.com/adhishcantcode/Real-time-N-body-gravitational-simulation-in-Unity.git
 
 2. Open the project in Unity
 3. Open the main scene
