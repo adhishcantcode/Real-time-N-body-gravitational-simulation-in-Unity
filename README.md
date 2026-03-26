@@ -114,6 +114,7 @@ Where:
 
 ## Key Features
 
+- Semi-implicit Euler integration for stable real-time updates
 - Real-time N-body simulation
 - O(n²) force computation
 - Semi-implicit Euler integration
@@ -126,10 +127,12 @@ Where:
 
 ## Technical Highlights
 
+- O(n²) pairwise force computation for N-body interaction
 - Two-phase update system (compute → apply)
 - Softened gravity model for stability
 - Deterministic physics loop
 - Balanced performance vs accuracy
+- Designed for real-time execution within Unity’s physics update loop
 
 ---
 
