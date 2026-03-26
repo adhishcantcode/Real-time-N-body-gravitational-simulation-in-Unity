@@ -135,7 +135,7 @@ Images/ → GIFs, screenshots, demo media
 
 1. Clone the repository:
 
-git clone https://github.com/adhishcantcode/Real-time-N-body-gravitational-simulation-in-Unity.git
+ git clone https://github.com/adhishcantcode/Real-time-N-body-gravitational-simulation-in-Unity.git
 
 2. Open the project in Unity
 3. Open the main scene
@@ -145,7 +145,7 @@ git clone https://github.com/adhishcantcode/Real-time-N-body-gravitational-simul
 
 ---
 
-## 🔗 Related Work
+## Related Work
 
 - Python Entry Task (N-body Simulation):  
   https://github.com/adhishcantcode/N-Body-Gravitational-Simulation
@@ -159,11 +159,11 @@ git clone https://github.com/adhishcantcode/Real-time-N-body-gravitational-simul
 
 This prototype will be extended into a full AR system:
 
-- 📱 AR integration using AR Foundation
-- 🌍 Real-world placement of planetary systems
-- 🧠 Advanced integration methods (Verlet)
-- ⚡ Performance optimization for larger systems
-- 🎮 Interactive controls (spawn, scale, reset)
+- AR integration using AR Foundation
+- Real-world placement of planetary systems
+- Advanced integration methods (Verlet)
+- Performance optimization for larger systems
+- Interactive controls (spawn, scale, reset)
 
 ---
 
