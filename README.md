@@ -53,8 +53,7 @@ This makes it suitable for interactive environments such as Augmented Reality (A
 ## Demo
 
 <p align="center">
-  <a href="Images/demo.mp4">Demo 1</a> •
-  <a href="Images/demo3.mp4">Demo 2</a>
+<video src="Images/demo.mp4" controls width="250"></video>
 </p>
 
 <p align="center">
