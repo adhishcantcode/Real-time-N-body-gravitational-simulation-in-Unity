@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="Images/demo3.mp4">
-    <img src="Images/demo.gif" width="70%" />
+    <img src="Images/demo.gif" width="80%" />
   </a>
 </p>
 
