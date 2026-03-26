@@ -54,7 +54,7 @@ _Real-time multi-body gravitational simulation in Unity_
 
 ## Screenshots
 
-[![Simulation Demo](Images/img1.png)](Images/img2.png)
+[![Simulation Demo](Images/img1.png)(Images/img2.png)
 [![Simulation Demo](Images/img3.png)
 
 ---
