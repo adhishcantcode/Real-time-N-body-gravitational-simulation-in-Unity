@@ -53,7 +53,8 @@ This makes it suitable for interactive environments such as Augmented Reality (A
 ## Demo
 
 <p align="center">
-<video src="Images/demo.mp4" controls width="250"></video>
+  <img src="Images/demo.gif" width="45%" />
+  <img src="Images/demo3.gif" width="45%" />
 </p>
 
 <p align="center">
