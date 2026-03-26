@@ -1,4 +1,4 @@
-# 🌌 Unity N-Body Simulation (Entry Task + Prototype)
+# Unity N-Body Simulation (Entry Task + Prototype)
 
 [![Simulation Demo](Images/demo.gif)](Images/demo3.mp4)
 
