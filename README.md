@@ -1,177 +1,205 @@
-# Unity N-Body Simulation (Entry Task + Prototype)
+# Unity N-Body Simulation
 
-[![Simulation Demo](Images/demo.gif)](Images/demo3.mp4)
+### Real-Time Gravitational Physics Engine (GSoC 2026 Entry Task + Prototype)
 
-A real-time N-body gravitational simulation built in Unity to explore multi-body physics behavior, numerical stability, and visualization.  
-This project serves as a proof-of-concept (POC) for the GSoC 2026 proposal:
+<p align="center">
+  <a href="Images/demo3.mp4">
+    <img src="Images/demo.gif" width="70%" />
+  </a>
+</p>
 
-**“AR Gravity & Planetary Physics Simulator.”**
-
----
-
-## Overview
-
-This repository demonstrates a real-time implementation of an **N-body gravitational system**, where multiple bodies interact through Newtonian physics.
-
-The project highlights:
-
-- Physics-based simulation of orbital motion
-- Real-time performance in Unity
-- Clear visualization of complex multi-body interactions
-
-It forms the foundation for extending such simulations into **Augmented Reality (AR)** environments.
+<p align="center">
+  <b>Real-time multi-body orbital simulation built with Unity</b><br>
+  A foundation for <b>AR-based planetary physics systems</b>
+</p>
 
 ---
 
-## Objective
+## About The Project
 
-Implement a real-time simulation where:
+This project implements a real-time N-body gravitational simulation in Unity, modeling how multiple celestial bodies interact under Newtonian gravity.
 
-> Multiple celestial bodies interact under gravity and produce stable orbital motion
+It is developed as a Proof of Concept (POC) for my GSoC 2026 proposal:
+
+> “AR Gravity & Planetary Physics Simulator”  
+> (International Catrobat Association)
 
 ---
 
-## Prototype Description
+## Why This Matters
 
-This Unity-based prototype demonstrates:
+Simulating multiple gravitational bodies is computationally complex and numerically unstable.  
+This project focuses on solving that in real-time while maintaining:
 
-- Multi-body gravitational interaction (3–5 bodies)
-- Central massive body (Sun) with orbiting planets
-- Real-time orbital motion
-- Stable simulation using numerical integration
-- 3D orbital planes with slight tilt for depth
-- Visual orbit trails using Trail Renderer
+- Stability
+- Visual clarity
+- Performance
+
+This makes it suitable for interactive environments such as Augmented Reality (AR).
+
+---
+
+## What This Prototype Demonstrates
+
+- Multi-body gravitational interactions (3–5 bodies)
+- Central massive object (Sun-like system)
+- Stable orbital motion in real-time
+- Numerical integration (Semi-implicit Euler)
+- 3D orbital planes with tilt
+- Orbit visualization using Trail Renderer
 
 ---
 
 ## Demo
 
-[![Simulation Demo](Images/demo.mp4)
-[![Simulation Demo](Images/demo3.mp4)
+<p align="center">
+  <a href="Images/demo.mp4">Demo 1</a> •
+  <a href="Images/demo3.mp4">Demo 2</a>
+</p>
 
-_Real-time multi-body gravitational simulation in Unity_
+<p align="center">
+  <i>Real-time simulation of gravitational interactions in Unity</i>
+</p>
 
 ---
 
 ## Screenshots
 
-![Simulation Demo](Images/img1.png)
-![Simulation Demo](Images/img2.png)
-![Simulation Demo](Images/img3.png)
+<p align="center">
+  <img src="Images/img1.png" width="30%" />
+  <img src="Images/img2.png" width="30%" />
+  <img src="Images/img3.png" width="30%" />
+</p>
 
 ---
 
 ## How It Works
 
-1. Each body has:
-   - Mass
-   - Velocity
-   - Position
+Each body contains:
 
-2. At every physics step (`FixedUpdate`):
-   - Forces between all bodies are computed
-   - Acceleration is calculated
-   - Velocity and position are updated
+- Mass
+- Position
+- Velocity
 
-3. A **softening factor** is applied to:
-   - Prevent instability at small distances
-   - Avoid singularities in force calculation
+### Simulation Loop (FixedUpdate)
+
+1. Compute gravitational forces between all bodies
+2. Calculate acceleration
+3. Update velocity
+4. Update position
+
+### Stability Mechanism
+
+To avoid numerical instability:
+
+- A softening factor is applied
+- Prevents infinite forces at very small distances
+- Ensures smooth and stable simulation
 
 ---
 
 ## Physics Model
 
+```
 F = (G × m₁ × m₂) / r²
+```
 
 Where:
 
 - G → Gravitational constant
-- m₁, m₂ → Mass of bodies
+- m₁, m₂ → Masses
 - r → Distance between bodies
 
 ---
 
-## Features Demonstrated
+## Key Features
 
 - Real-time N-body simulation
-- O(n²) pairwise force computation
+- O(n²) force computation
 - Semi-implicit Euler integration
-- Softening factor for stability
-- Fixed timestep physics (`FixedUpdate`)
-- 3D orbital motion (tilted planes)
-- Orbit visualization using trails
-- Clean and modular Unity implementation
+- Fixed timestep physics (FixedUpdate)
+- 3D orbital dynamics
+- Clean and modular architecture
+- Orbit trails for visualization
 
 ---
 
 ## Technical Highlights
 
-To ensure stability and correctness:
-
-- Two-step update system (compute → apply)
-- Softening factor to prevent infinite forces
-- Fixed timestep for deterministic simulation
-- Balanced accuracy and performance for real-time execution
+- Two-phase update system (compute → apply)
+- Softened gravity model for stability
+- Deterministic physics loop
+- Balanced performance vs accuracy
 
 ---
 
 ## Tech Stack
 
-- **Engine:** Unity
-- **Language:** C#
-- **Physics Model:** Newtonian Gravity
-- **Update System:** Fixed timestep simulation
+| Component     | Technology        |
+| ------------- | ----------------- |
+| Engine        | Unity             |
+| Language      | C#                |
+| Physics Model | Newtonian Gravity |
+| Update System | Fixed timestep    |
 
 ---
 
 ## Project Structure
 
-Assets/ → Scripts, materials, scene files  
-Packages/ → Unity dependencies  
-ProjectSettings/ → Unity configuration  
-Images/ → GIFs, screenshots, demo media
+```
+Assets/            # Scripts, materials, scenes
+Packages/          # Unity dependencies
+ProjectSettings/   # Unity configuration
+Images/            # GIFs, screenshots, demos
+```
 
 ---
 
-## How to Run
+## Getting Started
 
-1. Clone the repository:
+### Clone the Repository
 
+```bash
 git clone https://github.com/adhishcantcode/Real-time-N-body-gravitational-simulation-in-Unity.git
+cd Real-time-N-body-gravitational-simulation-in-Unity
+```
 
-2. Open the project in Unity
+### Run the Project
+
+1. Open Unity Hub
+2. Add the cloned project
 3. Open the main scene
 4. Press Play
 
-> Ensure Unity version compatibility and required packages are installed
+> Ensure Unity version compatibility
 
 ---
 
 ## Related Work
 
-- Python Entry Task (N-body Simulation):  
+- Python N-body Simulation  
   https://github.com/adhishcantcode/N-Body-Gravitational-Simulation
 
-- AR Planet Simulation (Unity):  
+- AR Planet Simulation  
   https://github.com/adhishcantcode/AR-Planet-Simulation
 
 ---
 
-## Future Scope (Proposal Alignment)
+## Future Scope (GSoC Proposal)
 
-This prototype will be extended into a full AR system:
+This prototype will evolve into:
 
-- AR integration using AR Foundation
-- Real-world placement of planetary systems
-- Advanced integration methods (Verlet)
-- Performance optimization for larger systems
-- Interactive controls (spawn, scale, reset)
+- AR-based planetary system using AR Foundation
+- Real-world surface placement
+- Advanced integration methods (Verlet / Runge-Kutta)
+- Performance scaling for larger systems
+- Interactive controls (spawn, scale, reset bodies)
 
 ---
 
 ## Author
 
-**Adhish Gupta**
+Adhish Gupta
 
 - GitHub: https://github.com/adhishcantcode
 
@@ -179,16 +207,21 @@ This prototype will be extended into a full AR system:
 
 ## Acknowledgment
 
-This work is part of my application to the  
-**International Catrobat Association – GSoC 2026**
+Developed as part of my application to:
+
+International Catrobat Association – GSoC 2026
 
 ---
 
 ## Notes for Evaluators
 
-- Demonstrates **core N-body physics implementation**
-- Focused on **stability, clarity, and real-time performance**
-- Designed as a **direct foundation for AR-based simulation**
-- Includes visualization improvements for intuitive understanding
+- Implements core N-body physics from scratch
+- Focus on stability and real-time performance
+- Designed as a direct AR extension base
+- Clean, readable, and modular code structure
 
 ---
+
+<p align="center">
+  If you found this project useful, consider starring the repository.
+</p>
