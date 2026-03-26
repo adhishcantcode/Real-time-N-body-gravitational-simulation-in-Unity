@@ -66,9 +66,9 @@ This makes it suitable for interactive environments such as Augmented Reality (A
 ## Screenshots
 
 <p align="center">
-  <img src="Images/img1.png" width="50%" />
-  <img src="Images/img2.png" width="50%" />
-  <img src="Images/img3.png" width="50%" />
+  <img src="Images/img1.png" width="90%" />
+  <img src="Images/img2.png" width="90%" />
+  <img src="Images/img3.png" width="90%" />
 </p>
 
 ---
